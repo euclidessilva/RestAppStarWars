@@ -2,7 +2,6 @@ package com.starwars.service;
 
 import java.util.List;
 
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 
 import com.starwars.Entity.StarWars;
