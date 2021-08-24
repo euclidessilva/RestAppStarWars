@@ -25,7 +25,7 @@ public class StarWarsController {
 
 	 	@GetMapping("/search")
 	    public Page<StarWars> search(
-	            @RequestParam("searchTerm") String nome,
+	            @RequestParam("nome") String nome,
 	            @RequestParam(
 	                    value = "page",
 	                    required = false,
