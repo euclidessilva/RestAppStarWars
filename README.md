@@ -5,11 +5,10 @@ Consuma a API https://swapi.dev/api/ em Java
 ## Requirements
 
 Java 1.8<br>
-Spring boot
-
-Spring web
-Spring Data JPA
-Mysql
+Spring boot<br>
+Spring web<br>
+Spring Data JPA<br>
+Mysql<br>
 
 ## Getting started
 
