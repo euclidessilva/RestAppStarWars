@@ -25,15 +25,8 @@ public class StarWarsController {
 
 	 	@GetMapping("/search")
 	    public Page<StarWars> search(
-	            @RequestParam("nome") String nome,
-	            @RequestParam(
-	                    value = "page",
-	                    required = false,
-	                    defaultValue = "0") int page,
-	            @RequestParam(
-	                    value = "size",
-	                    required = false,
-	                    defaultValue = "10") int size) {
+	            @RequestParam("nome") String nome, @RequestParam(value = "page", required = false, defaultValue = "0") int page,
+	            @RequestParam(value = "size", required = false, defaultValue = "10") int size) {
 	        return service.search(nome, page, size);
 
 	    }

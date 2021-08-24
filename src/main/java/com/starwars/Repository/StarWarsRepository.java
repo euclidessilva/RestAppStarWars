@@ -14,8 +14,6 @@ import com.starwars.Entity.StarWars;
 public interface StarWarsRepository extends JpaRepository <StarWars, Long> {
 	
 	@Query(value = "select * FROM star.tbl_starwars c WHERE LOWER(c.nome) like %:searchTerm% ", nativeQuery = true)
-	    Page<StarWars> search(
-	            @Param("searchTerm") String searchTerm, 
-	            Pageable pageable);
+	    Page<StarWars> search(@Param("searchTerm") String searchTerm, Pageable pageable);
 
 }

@@ -18,19 +18,9 @@ public class StarWarsService implements IStarWarsService{
 	
 	@Autowired
     private StarWarsRepository repository;
-	public Page<StarWars> search(
-            String searchTerm,
-            int page,
-            int size) {
-        PageRequest pageRequest = PageRequest.of(
-                page,
-                size,
-                Sort.Direction.ASC,
-                "nome");
-
-        return repository.search(
-                searchTerm.toLowerCase(),
-                pageRequest);
+	public Page<StarWars> search(String searchTerm, int page, int size) {
+		PageRequest pageRequest = PageRequest.of( page, size, Sort.Direction.ASC, "nome");
+        return repository.search(searchTerm.toLowerCase(), pageRequest);
     }
 
     public Page<StarWars> findNameAll() {
