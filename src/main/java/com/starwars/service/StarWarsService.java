@@ -26,7 +26,7 @@ public class StarWarsService implements IStarWarsService{
     public Page<StarWars> findNameAll() {
         int page = 0;
         int size = 10;
-        PageRequest pageRequest = PageRequest.of( page, size, Sort.Direction.ASC, "name");
+        PageRequest pageRequest = PageRequest.of( page, size, Sort.Direction.ASC, "nome");
         return new PageImpl<>( repository.findAll(), pageRequest, size);
     }
 	@Override
