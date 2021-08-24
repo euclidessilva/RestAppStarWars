@@ -5,13 +5,9 @@ Consuma a API https://swapi.dev/api/ em Java
 ## Requirements
 
 Java 1.8
-
 Spring boot
-
 Spring web
-
 Spring Data JPA
-
 Mysql
 
 ## Getting started
