@@ -8,9 +8,9 @@ Java 1.8<br>
 Spring boot<br>
 Spring web<br>
 Spring Data JPA<br>
-JSON
-Maven
-Git
+JSON<br>
+Maven<br>
+Git<br>
 Mysql<br>
 
 ## Começando
