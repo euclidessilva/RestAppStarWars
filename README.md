@@ -2,7 +2,7 @@
 
 Consuma a API https://swapi.dev/api/ em Java
 
-## Tecnologis/libs utilizadas:
+## Tecnologias utilizadas:
 
 Java 1.8<br>
 Spring boot<br>
