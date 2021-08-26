@@ -53,8 +53,8 @@ public class StarWarsController {
 	   }
 	   
 	   @PutMapping(value="update/{id}")
-	   public StarWars update(@PathVariable("id") long id, @RequestBody StarWars starwars) {
-		   return service.save(starwars);
+	   public ResponseEntity update(@PathVariable("id") long id, @RequestBody StarWars starwars) {
+		   return service.update(id, starwars);
 	   }
 	   @DeleteMapping(path ={"delete/{id}"})
 	   public ResponseEntity<?> delete(@PathVariable long id) {
