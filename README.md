@@ -31,4 +31,4 @@ POST - http://localhost:8080/add<br><br>
 
 PUT - http://localhost:8080/update/{id}<br><br>
 
-PUT - http://localhost:8080/delete/{id}<br><br>
+DELETE - http://localhost:8080/delete/{id}<br><br>
