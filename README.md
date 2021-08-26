@@ -21,7 +21,7 @@ Altere o arquivo application.properties em src/main/recources para as suas confi
 
 ## Endpoints
 
-GET - http://localhost:8080/search?nome="palavra" <br><br>
+GET - http://localhost:8080/search?nome=palavra <br><br>
 
 GET - http://localhost:8080/all<br><br>
 
