@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.springframework.http.ResponseEntity;
 
-import com.starwars.Entity.StarWars;
+import com.starwars.entity.StarWars;
 
 public interface IStarWarsService {
 	public List findAll();

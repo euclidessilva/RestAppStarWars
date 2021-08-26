@@ -1,4 +1,4 @@
-package com.starwars.Entity;
+package com.starwars.entity;
 
 
 import java.util.List;

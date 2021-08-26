@@ -19,8 +19,9 @@ import org.springframework.boot.test.context.SpringBootTest.WebEnvironment;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.web.client.RestTemplate;
 
-import com.starwars.Controller.StarWarsController;
-import com.starwars.Entity.StarWars;
+import com.starwars.controller.StarWarsController;
+import com.starwars.entity.StarWars;
+
 //import io.restassured.RestAssured.*;
 //import io.restassured.matcher.RestAssuredMatchers.*;
 import org.hamcrest.Matchers.*;

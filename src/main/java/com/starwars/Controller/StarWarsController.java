@@ -1,4 +1,4 @@
-package com.starwars.Controller;
+package com.starwars.controller;
 
 import java.util.List;
 
@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.starwars.Entity.StarWars;
+import com.starwars.entity.StarWars;
 import com.starwars.service.StarWarsService;
 @RestController
 

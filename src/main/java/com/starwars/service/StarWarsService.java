@@ -11,13 +11,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.data.domain.Sort;
 
-import com.starwars.Entity.StarWars;
-import com.starwars.Repository.StarWarsRepository;
+import com.starwars.entity.StarWars;
+import com.starwars.repository.IStarWarsRepository;
 @Service
 public class StarWarsService implements IStarWarsService{
 	
 	@Autowired
-    private StarWarsRepository repository;
+    private IStarWarsRepository repository;
+	
 	public Page<StarWars> search(String searchTerm, int page, int size) {
 		PageRequest pageRequest = PageRequest.of( page, size, Sort.Direction.ASC, "nome");
         return repository.search(searchTerm.toLowerCase(), pageRequest);
@@ -37,8 +38,7 @@ public class StarWarsService implements IStarWarsService{
 	@Override
 	public ResponseEntity findById(long id) {
 		return repository.findById(id)
-	              .map(record -> ResponseEntity.ok().body(record))
-	              .orElse(ResponseEntity.notFound().build());
+	              .map(record -> ResponseEntity.ok().body(record)).orElse(ResponseEntity.notFound().build());
 	}
 
 	@Override
@@ -55,11 +55,8 @@ public class StarWarsService implements IStarWarsService{
 
 	@Override
 	public ResponseEntity<?> delete(long id) {
-		return repository.findById(id)
-	              .map(record -> {
-	                  repository.deleteById(id);
-	                  return ResponseEntity.ok().build();
-	              }).orElse(ResponseEntity.notFound().build());
+		return repository.findById(id).map(record -> {repository.deleteById(id);
+	    return ResponseEntity.ok().build();}).orElse(ResponseEntity.notFound().build());
 	}
 
 	@Override

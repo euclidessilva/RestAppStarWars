@@ -11,8 +11,8 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.MediaType;
 import org.springframework.web.client.RestTemplate;
 
-import com.starwars.Entity.Response;
-import com.starwars.Entity.StarWars;
+import com.starwars.entity.Response;
+import com.starwars.entity.StarWars;
 
 @SpringBootApplication
 public class DemoApplication implements CommandLineRunner {
@@ -40,7 +40,7 @@ public class DemoApplication implements CommandLineRunner {
 	public void run(String... args) throws Exception {
 		RestTemplate restTemplate = new RestTemplate();
 	    Response response = restTemplate.getForObject("https://swapi.dev/api/planets/1", Response.class);
-		StarWars s1 = new StarWars(null, "Tatooine", "arid", "desert", response.getFilms().size());
+		StarWars s1 = new StarWars(null, "Tatooine", "arid", "desert", response.getFilms().size() );
 	    Response response2 = restTemplate.getForObject("https://swapi.dev/api/planets/2", Response.class);
 		StarWars s2 = new StarWars(null, "Alderaan", "temperate", "grasslands, mountains", response2.getFilms().size());
 	    Response response3 = restTemplate.getForObject("https://swapi.dev/api/planets/3", Response.class);

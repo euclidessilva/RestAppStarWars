@@ -1,4 +1,4 @@
-package com.starwars.Entity;
+package com.starwars.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
