@@ -2,17 +2,20 @@
 
 Consuma a API https://swapi.dev/api/ em Java
 
-## Requirements
+## Tecnologis/libs utilizadas:
 
 Java 1.8<br>
 Spring boot<br>
 Spring web<br>
 Spring Data JPA<br>
+JSON
+Maven
+Git
 Mysql<br>
 
-## Getting started
+## Começando
 
 $ git clone https://github.com/euclidessilva/RestAppStarWars.git
 
-src/main/recources modify application.properties to your mysql definitions
+Altere o arquivo application.properties em src/main/recources para as suas configurações do mysql
 
